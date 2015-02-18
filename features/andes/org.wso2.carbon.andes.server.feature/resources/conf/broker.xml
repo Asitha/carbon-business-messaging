@@ -246,6 +246,10 @@ expression of the property. -->
             Increasing this value will speed-up the message sending mechanism. But the system load
             will increase. -->
             <parallelDeliveryHandlers>5</parallelDeliveryHandlers>
+            
+            <!-- Set the total content size retrieved from a query.
+            Batched query gets 3 MB (3 * 1024 * 1024 = 3145728) of content per query as default -->
+            <contentReadBatchSize>3145728</contentReadBatchSize>
         </delivery>
 
         <ackHandling>
